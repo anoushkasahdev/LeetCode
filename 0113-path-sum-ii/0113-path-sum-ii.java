@@ -37,12 +37,12 @@ class Solution {
             ans.add(new ArrayList<Integer>(l));  
             l.remove(l.size()-1);       
         }
-        //else 
+     
 
         l.add(root.val);
         
      
-       // return 
+      
        getPathSum(root.left,targetSum-root.val);
        getPathSum(root.right,targetSum-root.val);
        l.remove(l.size()-1);
