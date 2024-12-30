@@ -22,13 +22,7 @@ class Solution {
             }
         }
 
-        int merged[][]=new int[ans.size()][2];
-        for(int i=0;i<ans.size();i++)
-        {
-            merged[i][0]=ans.get(i)[0];
-            merged[i][1]=ans.get(i)[1];
-        }
-        return merged;
+        return ans.toArray(new int[ans.size()][2]);
         
     }
 }
